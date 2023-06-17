@@ -1,0 +1,229 @@
+.container {
+
+    width: 100%;
+    height: 98vh;
+    padding-top: 10px;
+    background-image: url("/src/Images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d9ebf3;
+
+}
+
+.weather {
+  
+    width: 769px;
+    padding: 30px;
+    margin: 90px auto;
+    background: linear-gradient(180deg, #BCFFEF 0%, #53A6D8 100%);
+    border: 4px solid #1A7BED;
+    border-radius: 40px; 
+}
+.weather-header {
+   margin: 0 0 0px 0; 
+   display: flex;
+   align-items: center;
+    justify-content: center;
+}
+
+.weather-header-logo {
+    width: 60%;
+    
+}
+.app-name {
+    color: #0093EC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.weather-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-search-input {
+    font-family: 'Inter';
+    background: #FFFFFF;
+    color: #525252;
+    font-size: 30px;
+    font-weight: bolder;
+    border: 2px solid #A4E8FE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+    width: 465px;
+    height: 51px;
+    text-align: center;
+}
+
+.weather-search-input:focus {
+  outline: none;
+}
+
+::placeholder {
+   
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px; 
+    line-height: 51px;
+
+    /* identical to box height */
+
+    text-align: center;
+
+
+color: #D7D7D7;
+  }
+
+.weather-search-button {
+    width: 51px;
+    height: 51px;
+
+    background: #FFFFFF;
+    border: 2px solid #A4E8FE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    margin: 0 0 0 10px;
+}
+
+.weather-search-button:hover {
+    -webkit-animation: button-hover 0.3s ease-in-out;
+    animation: button-hover 0.3s ease-in-out;
+    background-color: #dae8ecd3;
+    opacity: 0.8;
+  }
+
+
+  .weather-search-button:hover   .weather-search-icon {
+    color: #045c92;
+  }
+
+  @-webkit-keyframes button-hover {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes button-hover {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+
+
+.weather-search-icon {
+    width: 70%;
+}
+
+.weather-time {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.weather-time-select {
+    width: 95px;
+    height: 29px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 20px;
+    background: linear-gradient(180deg, #DF825F 0%, #DFB15B 100%);
+    border: 2px solid #FDE798;
+    border-radius: 14px;
+    background-color: #b3b3b3;
+
+}
+
+
+
+.weather-time-text {
+
+    height: 29px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.weather-api {
+    display: flex;
+    padding: 20px 0;
+    background-color: #a4e8fe70;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    
+}
+
+.weather-api-day {
+    flex-basis: 14.2857%;
+
+}
+
+
+
+.weather-api-day-text {
+    color: #fff;
+    text-align: center;
+}
+
+.weather-api-day-img {
+    height: 54px;
+    padding: 0 0 0 20px;
+}
+.weather-suggest {
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.weather-suggest-text {
+    width: 348px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+color: #FFFFFF;
+}
+
+.weather-suggest-icon {
+    width: 20px;
+    padding: 0 10px;
+    color: #d9ebf3;
+}
