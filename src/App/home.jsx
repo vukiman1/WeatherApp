@@ -1,7 +1,6 @@
 import React from "react";
 import SearchBar from './searchbar'
-import WeatherRender from './weatherRender'
-import Time from './time'
+
 import Suggest from './suggest'
 import logo from '../Images/logo.png'
 
@@ -18,8 +17,7 @@ function Home() {
                     <img className="weather-header-logo" src={logo} alt="" />
                 </div>
                 <SearchBar/>
-                <Time/>
-                <WeatherRender/>
+                
                 <Suggest/>
                 
             </div>

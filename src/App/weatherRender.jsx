@@ -1,50 +1,58 @@
 import cloud from '../Images/cloud_1.png'
 import { useState } from 'react'
-
-function Weather() {
+import { forecast } from './WeatherApp'
+function Weather(forecast ) {
     const [apiday, setApiday] =useState([
         {
            day: 'Hôm nay',
-           img: cloud
+           img: cloud,
+           temperature: 24
         },
         {
             day: 'Hôm nay',
-            img: cloud
+            img: cloud,
+            temperature: 24
          },
          {
             day: 'Hôm nay',
-            img: cloud 
+            img: cloud ,
+            temperature: 24
          },
          {
             day: 'Hôm nay',
-            img: cloud 
+            img: cloud ,
+            temperature: 24
          },
          {
             day: 'Hôm nay',
-            img: cloud 
-         },
-         {
-            day: 'Hôm nay',
-            img: cloud 
-         },
-         {
-            day: 'Hôm nay',
-            img: cloud 
+            img: cloud ,
+            temperature: 24
          }
     ])
-    return (
-        <div className="weather-api">
+   //  console.log(typeof(forecast))
+   //  console.log(Array.isArray(apiday))
+    const forecast2 = Object.values(forecast);
+    console.log(Array.isArray(forecast2))
+    console.log(forecast2.main)
+    console.log(forecast)
 
-                {
-                    apiday.map((item) => (
+    return (
+      <>
+               <div className="weather-api">
+                  {
+                     apiday.map((item) => (
                         <div className="weather-api-day">
-                        <h3 className="weather-api-day-text">{item.day}</h3>
-                        <img className = 'weather-api-day-img'src={item.img} alt="" />
-                    </div>   
-                    ))
-                }
-                                                      
-        </div>
+                        <h3 className="weather-api-day-text"></h3>
+                        <img className = 'weather-api-day-img'src='{item.img} 'alt="" />
+                        <h3 className="weather-api-day-text weather-api-day-temperature"> °C</h3>
+                     </div>   
+                     ))
+                  }                                          
+               </div>
+      </>
+       
+
+        
     )
 }
 
