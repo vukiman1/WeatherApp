@@ -59,8 +59,11 @@ function Search() {
                             <img className='weather-search-icon' src={search} alt=''/>        
                         </button>                
             </div>
-            <Time/>
-            <WeatherRender forecast={forecast}/>
+            {/* <div className='weather-error'>
+              <p>Nhập sai tên thành phố, hãy nhập lại!</p>
+            </div> */}
+            <Time key={''}/>
+            <WeatherRender  forecast={forecast}/>
         </>
         
     )

@@ -16,9 +16,9 @@ function Home() {
                     {/* <h1 className="app-name">Weather App</h1> */}
                     <img className="weather-header-logo" src={logo} alt="" />
                 </div>
-                <SearchBar/>
+                <SearchBar key={'search'}/>
                 
-                <Suggest/>
+                <Suggest key={'suggest'}/>
                 
             </div>
         </div>

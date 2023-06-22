@@ -141,6 +141,14 @@ color: #D7D7D7;
     width: 70%;
 }
 
+
+.weather-error p{
+  text-align: center;
+  margin: 0;
+  color: #ff0000;
+}
+
+
 .weather-time {
     display: flex;
     justify-content: center; 
