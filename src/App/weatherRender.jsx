@@ -2,33 +2,7 @@ import cloud from '../Images/cloud_1.png'
 import { useState } from 'react'
 import { forecast } from './WeatherApp'
 function Weather(forecast ) {
-    const [apiday, setApiday] =useState([
-        {
-           day: 'Hôm nay',
-           img: cloud,
-           temperature: 24
-        },
-        {
-            day: 'Hôm nay',
-            img: cloud,
-            temperature: 24
-         },
-         {
-            day: 'Hôm nay',
-            img: cloud ,
-            temperature: 24
-         },
-         {
-            day: 'Hôm nay',
-            img: cloud ,
-            temperature: 24
-         },
-         {
-            day: 'Hôm nay',
-            img: cloud ,
-            temperature: 24
-         }
-    ])
+
    //  console.log(typeof(forecast))
    //  console.log(Array.isArray(apiday))
     const forecast2 = Object.values(forecast);

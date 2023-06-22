@@ -14,7 +14,7 @@ function Search() {
     const [forecastDays, setForecastDays] = useState(7); // Số ngày dự báo mặc định là 7
     
     const handleSubmit = async (e) => {
-        alert (city)
+
         e.preventDefault();
     
         try {
