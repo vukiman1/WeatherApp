@@ -1,14 +1,24 @@
+import React from 'react';
 
+function Time({ handleSelectChange }) {
 
-function Time () {
+  const handleChange = (e) => {
+    const selectedDays = parseInt(e.target.value);
+    handleSelectChange(selectedDays);
+  }
+    
     return (
-        <div className="weather-time">
-            <h2 className="weather-time-text">Khoảng thời gian dự báo</h2>
-            <select className="weather-time-select" id = 'time'>
+        <section className="time">
+            <h2 className="time__text">Khoảng thời gian dự báo</h2>
+            <select 
+            className="time__select" 
+            id = 'time'
+            onChange={handleChange}
+            >
                 <option value="3">3 Ngày</option>
-                <option value="7">7 Ngày</option>
+                <option value="5">5 Ngày</option>
             </select>
-        </div>
+        </section>
     )
     
 }

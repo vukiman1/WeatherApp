@@ -1,11 +1,10 @@
-import cloud from '../Images/cloud_1.png'
-import { useState } from 'react'
-import { forecast } from './WeatherApp'
+import cloud from '../Images/rain.gif'
+
 function Weather(forecast ) {
 
    //  console.log(typeof(forecast))
    //  console.log(Array.isArray(apiday))
-    const forecast2 = Object.values(forecast);
+
    //  console.log(Array.isArray(forecast2))
     console.log(forecast.forecast)
     function convertDate(values) {
@@ -22,24 +21,27 @@ function Weather(forecast ) {
       const currentDateConvert = currentDate.toLocaleDateString(undefined, options);
       const formattedDate = date.toLocaleDateString(undefined, options);
 
-      if (currentDateConvert == formattedDate) return 'Hôm nay'
+      if (currentDateConvert === formattedDate) return 'Hôm nay'
       else return formattedDate
       
     }
     return (
       <>       
                
-               <div className="weather-api">
+               <section className="forecast">
                   {
                      forecast.forecast.map((item) => (
-                     <div className="weather-api-day">
-                        <h3 className="weather-api-day-text"> {convertDate(item.dt_txt)}</h3>
-                        <img className = 'weather-api-day-img' src={cloud} alt="" />
-                        <h3 className="weather-api-day-text weather-api-day-temperature">{Math.round(item.main.temp)}°C</h3>
+                     <div className="forecast__day">
+                        <h3 className="forecast__day--text"> {convertDate(item.dt_txt)}</h3>
+                        <img className = 'forecast__day--img' src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`} alt="" />
+                        <h3 className="forecast__day--text forecast__day--temperature">{Math.round(item.main.temp)}°C</h3>
                      </div>   
                      ))
-                  }                                          
-               </div>
+                  }
+                     
+
+
+               </section>
       </>
        
 

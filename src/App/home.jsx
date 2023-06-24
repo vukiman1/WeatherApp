@@ -10,18 +10,18 @@ function Home() {
     
     return (
        
-        <div className="container">
+        <main className="container">
             <div className="weather">
-                <div className="weather-header">
+                <div className="header">
                     {/* <h1 className="app-name">Weather App</h1> */}
-                    <img className="weather-header-logo" src={logo} alt="" />
+                    <img className="header__logo" src={logo} alt="" />
                 </div>
                 <SearchBar key={'search'}/>
                 
                 <Suggest key={'suggest'}/>
                 
             </div>
-        </div>
+        </main>
     )
 }
 
