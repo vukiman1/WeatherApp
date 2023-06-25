@@ -59,7 +59,7 @@ function Weather(forecast ) {
 
                </section>
                   <Suggest weatherCondition={selectedDay} />
-                  <img className = 'forecast__day--img' src='../access/images/weather_icon/clear sky.gift' alt=''/>
+                  <img className = 'forecast__day--img' src='../access/images/weather_icon/13d.gift' alt=''/>
       </>
        
 
