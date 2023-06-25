@@ -11,10 +11,7 @@ function Weather(forecast ) {
    function handleDayClick(day) {
       setSelectedDay(day);
    }
-   function x() {
-      setSelectedDay(null);
-   }
-   
+ 
    useEffect(() => {
       setSelectedDay(null);
     }, [forecast])
@@ -62,7 +59,7 @@ function Weather(forecast ) {
 
                </section>
                   <Suggest weatherCondition={selectedDay} />
-                  {x}
+                  <img className = 'forecast__day--img' src='../Images/rain.gift' alt=''/>
       </>
        
 

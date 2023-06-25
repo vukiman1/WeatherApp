@@ -269,7 +269,8 @@ color: #D7D7D7;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-
+    display: flex;
+    align-items: center;
 color: #FFFFFF;
 }
 

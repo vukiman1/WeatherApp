@@ -10,13 +10,15 @@ console.log('begin')
 console.log('end')
 
   return (
-    <section className="suggest" key="suggest">
+    <section className="suggest" key="">
       
       {(weatherCondition.weatherCondition === null) ? (
         <p>Bấm vào từng ngày để xem gợi ý!</p>
       )   : (
-        <img className="suggest__icon" src={suggest} alt="" />,
-        <p>{suggestion}</p>
+        <p>
+          <img className="suggest__icon" src={suggest} alt="img" />
+          {suggestion}
+        </p>
       )}
     </section>
   );
