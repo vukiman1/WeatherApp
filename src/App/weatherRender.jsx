@@ -50,7 +50,7 @@ function Weather(forecast ) {
                         onClick={() => handleDayClick(item.weather[0].description)}
                         >
                         <h3 className="forecast__day--text"> {convertDate(item.dt_txt)}</h3>
-                        <img className = 'forecast__day--img' src={`https://openweathermap.org/img/wn/${item.weather[0].icon.slice(0, 2)}d.png`} alt="" />
+                        <img className = 'forecast__day--img' src={`https://github.com/vukiman1/WeatherApp/blob/master/public/access/weather_icon/${item.weather[0].icon.slice(0, 2)}d.gif?raw=true`} alt="" />
                         <h3 className="forecast__day--text forecast__day--temperature">{Math.round(item.main.temp)}°C</h3>
                      </div>   
                      ))
@@ -59,7 +59,6 @@ function Weather(forecast ) {
 
                </section>
                   <Suggest weatherCondition={selectedDay} />
-                  <img className = 'forecast__day--img' src='../access/images/weather_icon/13d.gift' alt=''/>
       </>
        
 
