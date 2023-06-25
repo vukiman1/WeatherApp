@@ -8,11 +8,10 @@ function Time({ handleSelectChange }) {
   }
     
     return (
-        <section className="time">
-            <h2 className="time__text">Khoảng thời gian dự báo</h2>
+        <section className="time" key='time'>
+            <h2>Khoảng thời gian dự báo</h2>
             <select 
             className="time__select" 
-            id = 'time'
             onChange={handleChange}
             >
                 <option value="3">3 Ngày</option>

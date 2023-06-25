@@ -81,6 +81,8 @@
 color: #D7D7D7;
   }
 
+ 
+
 .search__button {
     width: 51px;
     height: 51px;
@@ -142,9 +144,13 @@ color: #D7D7D7;
 }
 
 
-.weather-error {
+.search__error p{
+  /* position: absolute; */
+  left: 37%;
+  top: 40%;
   text-align: center;
-  margin: 0;
+  font-size: 11px;
+  margin: 5px 0 0 0;
   color: #ff0000;
 }
 
@@ -173,13 +179,13 @@ color: #D7D7D7;
 
 }
 
-.time_select:hover {
+.time__select:hover {
   -webkit-animation: button-hover 0.3s ease-in-out;
     animation: button-hover 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.time__text {
+.time h2 {
 
     height: 29px;
 
@@ -204,7 +210,7 @@ color: #D7D7D7;
     background-color: #a4e8fe70;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
-    justify-content: center ;
+    justify-content: space-around ;
     
 }
 
@@ -233,6 +239,7 @@ color: #D7D7D7;
 .forecast__day--text {
     color: #fff;
     text-align: center;
+    margin: 0;
 }
 
 .forecast__day--img {
@@ -251,12 +258,11 @@ color: #D7D7D7;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 
-.suggest__text {
-    width: 348px;
+.suggest p {
     height: 19px;
     font-family: 'Inter';
     font-style: italic;

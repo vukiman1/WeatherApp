@@ -1,7 +1,6 @@
 import React from "react";
 import SearchBar from './searchbar'
 
-import Suggest from './suggest'
 import logo from '../Images/logo.png'
 
 import './style.css'
@@ -18,7 +17,6 @@ function Home() {
                 </div>
                 <SearchBar key={'search'}/>
                 
-                <Suggest key={'suggest'}/>
                 
             </div>
         </main>

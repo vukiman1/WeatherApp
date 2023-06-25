@@ -1,12 +1,25 @@
-import suggest from '../Images/suggest.png'
+import suggest from '../Images/suggest.png';
+import getSuggestion from './suggestion'
+function Suggest(weatherCondition) {
+   const suggestion = getSuggestion(weatherCondition.weatherCondition)
+console.log('begin')
+// console.log(weatherCondition.forecastCondition)
+// weatherCondition.forecastCondition.map((item)=> {
+    console.log(weatherCondition.weatherCondition)
+// })
+console.log('end')
 
-function Suggest() {
-    return (
-        <section className="suggest">
-                <img className="suggest__icon" src={suggest} alt="" />
-                <p className="suggest__text">Gợi ý: nên mang áo mưa vì trời có thể đổ mưa!</p>
-         </section>
-    )
+  return (
+    <section className="suggest" key="suggest">
+      
+      {(weatherCondition.weatherCondition === null) ? (
+        <p>Bấm vào từng ngày để xem gợi ý!</p>
+      )   : (
+        <img className="suggest__icon" src={suggest} alt="" />,
+        <p>{suggestion}</p>
+      )}
+    </section>
+  );
 }
 
-export default Suggest
+export default Suggest;
