@@ -97,6 +97,11 @@ color: #D7D7D7;
   color: #045c92;
 
 }
+
+.search__button:hover   h3 {
+  color: #045c9277;
+
+}
 .search__button:hover {
     -webkit-animation: button-hover 0.3s ease-in-out;
     animation: button-hover 0.3s ease-in-out;
@@ -143,7 +148,9 @@ color: #D7D7D7;
     width: 70%;
 }
 
-
+.search__button--text {
+  display: none;
+}
 .search__error p{
   /* position: absolute; */
   left: 37%;
@@ -281,3 +288,79 @@ color: #FFFFFF;
     
 }
 
+
+@media screen and (max-width: 768px){
+  .container {
+    height: auto;
+    padding: 0;
+  }
+  .weather {
+    border: none;
+    border-radius: 0px;
+    height: 100%;
+  }
+
+  .header {
+    margin: 1rem 0 0 0;
+  }
+
+  .search {
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+
+  .search__input {
+    width: auto;
+  }
+  .search__button {
+    width: 265px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(92 173 218);
+  }
+  .search__button--icon {
+    display: none;
+  }
+  .search__button--text {
+    display: block;
+    color:#ffffff
+  }
+
+  .time {
+    flex-direction: column;
+  }
+
+ 
+   .forecast {
+    display: block;
+    margin: 20px 0 0 0;
+    
+   }
+   .forecast__day {
+    margin: 0 0 40px 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+
+   /* .time {
+    margin: 0 0 600px 0;
+   } */
+}
+
+
+@media screen and (max-width: 380px){
+  .search__input {
+    width: 259px;
+  }
+
+  ::placeholder {
+   
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px; 
+    line-height: 21px;
+  }
+
+  
+}

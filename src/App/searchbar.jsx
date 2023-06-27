@@ -77,7 +77,7 @@ function Search() {
                             className="search__input"
                             value={city}
                             type="text"
-                            placeholder="Nhập tên thành phố, ví dụ:HaNoi"
+                            placeholder="Nhập tên thành phố!"
                         >
                         </input>
                         
@@ -87,11 +87,12 @@ function Search() {
                             onClick = {handleSubmit}
 
                         >
-                            <img className='search__button--icon' src={search} alt=''/>        
+                            <img className='search__button--icon' src={search} alt=''/>   
+                            <h3 className='search__button--text'>Tìm Kiếm</h3>     
                         </button>                
             </section>
             {errors &&  <div className='search__error'>
-              <p>Nhập sai tên thành phố, hãy nhập lại! {errors}</p>
+              <p>Nhập sai tên thành phố, hãy nhập lại! Ví dụ: London, Paris{errors}</p>
             </div> }
             <Time handleSelectChange={handleSelectChange}/>
             {forecast.length !== 0 ? (
