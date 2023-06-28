@@ -1,6 +1,5 @@
 import React from "react";
 import SearchBar from './searchbar'
-
 import logo from '../Images/logo.png'
 
 import './style.css'
@@ -16,8 +15,7 @@ function Home() {
                     <img className="header__logo" src={logo} alt="" />
                 </div>
                 <SearchBar key={'search'}/>
-                
-                
+                                
             </div>
         </main>
     )
