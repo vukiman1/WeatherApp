@@ -40,8 +40,7 @@ function Weather(forecast ) {
 
       
     return (
-      <>       
-               
+      <>                      
                <section className="forecast" key='forecast'>
                   {
                      forecast.forecast.map((item) => (

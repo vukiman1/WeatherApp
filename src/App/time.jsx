@@ -1,9 +1,14 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { dayChange } from '../redux/counterSilce';
 
 function Time({ handleSelectChange }) {
-
+  const count = useSelector(state => state.day.value)
+  console.log(`Ngay duoc luu o Reux ${count}`)
+  const dispatch = useDispatch()
   const handleChange = (e) => {
     const selectedDays = parseInt(e.target.value);
+    dispatch(dayChange(selectedDays))
     handleSelectChange(selectedDays);
   }
     
